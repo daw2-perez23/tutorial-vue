@@ -1,6 +1,6 @@
 <template>
   <div id="formulario-persona">
-    <form>
+    <form @submit.prevent="enviarFormulario">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -46,7 +46,13 @@
         },
       }
     },
-  }
+    methods: {
+    enviarFormulario() {
+      console.log('Funciona!');
+    },
+  },
+}
+
 </script>
 
 <style scoped>
