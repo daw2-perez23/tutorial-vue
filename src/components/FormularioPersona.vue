@@ -1,5 +1,5 @@
 <template>
-  <div id="formulario-persona">
+  <div id="formulario-persona" @add-persona="agregarPersona">
     <form @submit.prevent="enviarFormulario">
       <div class="container">
         <div class="row">
